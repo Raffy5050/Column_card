@@ -1,0 +1,57 @@
+.grid-container {
+    display: grid;
+    margin: 130px 350px;
+    width: 50%;
+    height: 60vh;
+   grid-template-columns: (70%, 30%);  
+    background: aqua;
+    padding: 40px;
+    gap: 10px;
+    grid-template-areas:
+     "header header sidebar"
+     "box-two box-three box three"
+     "box-two box-five box-five";
+  } 
+  .grid-1 {
+    margin-top:-25px ;
+grid-area: header;
+    background: hsl(31, 77%, 52%);
+    height: 200px;
+    width: 390px;
+  }
+  .grid-2 {
+    margin-top: -25px;
+    margin-left: 400px;
+    grid-area: sidebar;
+    background: yellow;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .grid-3 {
+    margin-top: 185px;
+    grid-area: box-two;
+    background: green;
+    height: 200px;
+    width: 230px;
+  }
+  
+  .grid-4 {
+    margin-top:290px ;
+    margin-left: 240px;
+    grid-area: box-three;
+    background: blue;
+    height: 95px;
+    width: 360px;
+  }
+  
+  .grid-5 {
+    margin-top: 190px;
+    margin-left: 240px;
+    grid-area: box-five;
+    gap: 10px;
+    background: blue;
+    height: 95px;
+    width: 360px;
+  } 
+  
